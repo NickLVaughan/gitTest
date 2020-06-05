@@ -3,8 +3,10 @@ platform: linux
 image_resource:
   type: docker-image
   source: {repository: ubuntu}
-
 run:
-  path: echo
-  args: ["Hello, world Pt 2!"]
+  path: params.yml
+  args: echo dog_name + "\n" + cat_name
+params:
+  dog_name: ((dog_name))
+  cat_name: ((cat_name))
   
