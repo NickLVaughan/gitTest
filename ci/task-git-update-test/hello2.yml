@@ -5,7 +5,7 @@ image_resource:
   source: {repository: ubuntu}
 run:
   path: params.yml
-  args: echo dog_name + "\n" + cat_name
+  args: echo dog_name
 params:
   dog_name: ((dog_name))
   cat_name: ((cat_name))
